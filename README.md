@@ -1,5 +1,6 @@
-# Bullseye GO Example
-a example usage of Bullseye
+
+# Bullseye Go
+a go library for connecting to the bullseye monitor web socket.
 
 # Installation
 ```
