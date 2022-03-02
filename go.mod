@@ -1,4 +1,4 @@
-module bullsye-go
+module github.com/BullseyeMonitors/bullseye-go
 
 go 1.17
 
