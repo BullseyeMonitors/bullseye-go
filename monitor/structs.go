@@ -1,4 +1,4 @@
-package bullseye
+package monitor
 
 type Region string
 const (

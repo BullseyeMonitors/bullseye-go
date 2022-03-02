@@ -1,4 +1,4 @@
-package bullseye
+package monitor
 
 import (
 	"encoding/base64"

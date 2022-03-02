@@ -1,20 +1,20 @@
 package _go
 
 import (
-	"bullsye-go/bullseye"
 	"fmt"
+	"github.com/BullseyeMonitors/bullseye-go/monitor"
 	"testing"
 )
 
 func TestMonitor(t *testing.T) {
-	monitor := bullseye.Monitor{
+	bullseye := monitor.Monitor{
 		ApiKey:           "KEY",
 		DecryptionString: "DECRYPTION_KEY",
 		Scopes:           []string{"amazon"},
 		Verbose:          true,
 		NotificationHandler: NotificationHandler,
 	}
-	err := monitor.Connect()
+	err := bullseye.Connect()
 	if err != nil {
 		return
 	}
@@ -23,6 +23,6 @@ func TestMonitor(t *testing.T) {
 	}
 }
 
-func NotificationHandler(product bullseye.BaseProduct) {
+func NotificationHandler(product monitor.BaseProduct) {
 	fmt.Println(product)
 }
